@@ -1,13 +1,5 @@
 # Wabot
 
-> **English summary.** Wabot is an open-source WhatsApp chatbot microservice. It answers customers
-> with configurable flows (`flow.json`) and an optional LLM (any OpenAI-compatible provider:
-> OpenRouter, OpenAI, Ollama…), lets a human take over from a WhatsApp-style web panel
-> (Manual/Auto toggle), and exposes a REST API, a WebSocket and signed webhooks so any system can
-> send messages and react to conversations. It ships with a built-in phone simulator, so you can run
-> the whole thing without a Meta account. Stack: FastAPI + PostgreSQL + React. MIT licensed.
-> Docs are in Spanish.
-
 Wabot es un microservicio de chatbot para WhatsApp. Atiende a tus clientes con flujos que defines en
 un JSON y, si quieres, con un modelo de IA; cuando hace falta una persona, un asesor toma la
 conversación desde un panel que se ve y se usa como WhatsApp Web. Tu sistema (CRM, ERP, tienda) se
