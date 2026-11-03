@@ -1,0 +1,23 @@
+[
+  {
+    "name": "seguimiento_cotizacion",
+    "language": "es",
+    "body": "Hola {{1}}, te escribimos de Impulso Digital. ¿Pudiste revisar la propuesta de {{2}} que te enviamos? Estamos para resolver tus dudas.",
+    "params": ["nombre", "servicio"],
+    "buttons": ["Sí, hablemos", "Más adelante"]
+  },
+  {
+    "name": "recordatorio_reunion",
+    "language": "es",
+    "body": "Hola {{1}}, te recordamos tu reunión de diagnóstico el {{2}} a las {{3}}. ¿Confirmas tu asistencia?",
+    "params": ["nombre", "fecha", "hora"],
+    "buttons": ["Confirmo", "Reprogramar"]
+  },
+  {
+    "name": "reactivar_conversacion",
+    "language": "es",
+    "body": "Hola {{1}}, ¿seguimos con tu consulta? Responde a este mensaje y te atendemos de inmediato.",
+    "params": ["nombre"],
+    "buttons": []
+  }
+]

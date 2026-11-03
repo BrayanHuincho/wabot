@@ -1,0 +1,96 @@
+:root {
+  --font-ui: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --surface-3: #f1f5f9;
+  --border-subtle: #eef0f3;
+  --border: #e4e7ec;
+  --border-strong: #cfd5dd;
+  --text: #1f2937;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --title: #0f172a;
+
+  --brand: #f97316;
+  --brand-hover: #ea580c;
+  --brand-soft: #fff4ec;
+  --ink: #0f172a;
+
+  --success: #10b981;
+  --success-text: #047857;
+  --success-soft: #ecfdf5;
+  --warning: #f59e0b;
+  --warning-bg: #fff7ed;
+  --warning-border: #fed7aa;
+  --warning-text: #9a3412;
+  --danger: #ef4444;
+  --danger-bg: #fef2f2;
+  --danger-text: #b91c1c;
+  --on-brand: #ffffff;
+  --overlay: rgb(15 23 42 / 0.28);
+  --info: #0ea5e9;
+
+  --wa-green: #25d366;
+  --wa-teal: #008069;
+  --wa-teal-dark: #075e54;
+  --wa-bg: #efeae2;
+  --wa-in: #ffffff;
+  --wa-out: #d9fdd3;
+  --wa-text: #111b21;
+  --wa-meta: #667781;
+  --wa-tick-read: #53bdeb;
+  --wa-link: #027eb5;
+  --wa-action: #00a5f4;
+  --wa-quote-in: #f5f6f6;
+  --wa-quote-out: #d1f4cc;
+  --wa-bar: #f0f2f5;
+  --wa-icon: #54656f;
+  --wa-icon-muted: #8696a0;
+  --wa-fab: #1daa61;
+  --wa-notice: #ffeecd;
+  --wa-online: #1daa61;
+
+  --device: #16181b;
+  --device-edge: #2c3036;
+
+  --fs-2xs: 11px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 20px;
+
+  --lh-tight: 1.2;
+  --lh-mid: 1.4;
+  --lh-body: 1.5;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-bubble: 8px;
+  --r-pill: 999px;
+
+  --shadow-1: 0 1px 2px rgb(15 23 42 / 0.06);
+  --shadow-2: 0 4px 16px -4px rgb(15 23 42 / 0.12), 0 1px 3px rgb(15 23 42 / 0.06);
+  --shadow-3: 0 24px 48px -12px rgb(15 23 42 / 0.28);
+  --shadow-bubble: 0 1px 0.5px rgb(11 20 26 / 0.13);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 150ms ease;
+  --t: 250ms ease;
+
+  --z-menu: 50;
+  --z-modal: 100;
+  --z-toast: 200;
+}

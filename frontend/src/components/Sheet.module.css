@@ -1,0 +1,75 @@
+.layer {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-menu);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgb(11 20 26 / 0.4);
+  animation: fade 0.2s ease;
+}
+
+.sheet {
+  position: relative;
+  max-height: 78%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px 16px 0 0;
+  background: var(--surface);
+  box-shadow: var(--shadow-3);
+  animation: slide 0.3s var(--ease-out);
+  outline: none;
+}
+
+.grip {
+  align-self: center;
+  width: 36px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: var(--r-pill);
+  background: var(--border-strong);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 32px 1fr 32px;
+  align-items: center;
+  padding: var(--sp-2) var(--sp-3);
+}
+
+.header button {
+  display: grid;
+  place-items: center;
+  height: 32px;
+  color: var(--wa-meta);
+}
+
+.header h3 {
+  margin: 0;
+  text-align: center;
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--wa-text);
+}
+
+.body {
+  overflow-y: auto;
+  padding-bottom: var(--sp-3);
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}

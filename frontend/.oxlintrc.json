@@ -1,0 +1,10 @@
+{
+  "plugins": ["react", "typescript", "jsx-a11y"],
+  "categories": { "correctness": "error", "suspicious": "warn" },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/prefer-tag-over-role": "off",
+    "jsx-a11y/media-has-caption": "off",
+    "jsx-a11y/no-autofocus": "off"
+  }
+}

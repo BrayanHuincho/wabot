@@ -1,0 +1,55 @@
+.viewport {
+  position: fixed;
+  right: var(--sp-5);
+  bottom: var(--sp-5);
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  width: min(380px, calc(100vw - 32px));
+}
+
+.toast {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--info);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-2);
+  animation: enter 0.3s var(--ease-out);
+}
+
+.toast[data-tone='error'] {
+  border-left-color: var(--danger);
+}
+
+.toast[data-tone='error'] > svg {
+  color: var(--danger);
+}
+
+.toast > svg {
+  flex: none;
+  margin-top: 1px;
+  color: var(--info);
+}
+
+.toast p {
+  flex: 1;
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--text);
+}
+
+.toast button {
+  color: var(--text-muted);
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}

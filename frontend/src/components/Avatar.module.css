@@ -1,0 +1,25 @@
+.avatar {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.badge {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  display: grid;
+  place-items: center;
+  padding: 2px;
+  border-radius: 50%;
+  background: var(--wa-green);
+  color: #fff;
+  box-shadow: 0 0 0 2px var(--surface);
+}

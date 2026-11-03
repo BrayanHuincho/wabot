@@ -1,0 +1,262 @@
+{
+  "start": "welcome",
+  "fallback": "ai",
+  "keywords": {
+    "hola": "welcome",
+    "menu": "welcome",
+    "inicio": "welcome",
+    "servicios": "services",
+    "precios": "services",
+    "brochure": "brochure",
+    "catalogo": "brochure",
+    "agendar": "book_call",
+    "reunion": "book_call",
+    "asesor": "human",
+    "hablar con alguien": "human",
+    "humano": "human"
+  },
+  "nodes": {
+    "welcome": {
+      "messages": [
+        {
+          "type": "image",
+          "asset": "welcome.png",
+          "body": "¡Hola! Bienvenido a Impulso Digital"
+        },
+        {
+          "type": "buttons",
+          "header": "Impulso Digital",
+          "body": "Ayudamos a negocios como el tuyo a vender más en internet. ¿En qué te podemos ayudar hoy?",
+          "footer": "Responde con un botón o escríbenos",
+          "buttons": [
+            {
+              "id": "services",
+              "title": "Ver servicios"
+            },
+            {
+              "id": "brochure",
+              "title": "Recibir brochure"
+            },
+            {
+              "id": "human",
+              "title": "Hablar con asesor"
+            }
+          ]
+        }
+      ]
+    },
+    "services": {
+      "messages": [
+        {
+          "type": "list",
+          "header": "Nuestros servicios",
+          "body": "Elige el servicio que te interesa y te contamos los detalles.",
+          "list_button": "Ver servicios",
+          "sections": [
+            {
+              "title": "Marketing",
+              "rows": [
+                {
+                  "id": "svc_ads",
+                  "title": "Publicidad en Meta",
+                  "description": "Campañas en Facebook e Instagram con objetivo de ventas"
+                },
+                {
+                  "id": "svc_seo",
+                  "title": "SEO y Google Ads",
+                  "description": "Aparece primero cuando tus clientes te buscan"
+                },
+                {
+                  "id": "svc_social",
+                  "title": "Redes sociales",
+                  "description": "Contenido, calendario y community management"
+                }
+              ]
+            },
+            {
+              "title": "Desarrollo",
+              "rows": [
+                {
+                  "id": "svc_web",
+                  "title": "Páginas web",
+                  "description": "Webs rápidas y tiendas online listas para vender"
+                },
+                {
+                  "id": "svc_bot",
+                  "title": "Chatbots WhatsApp",
+                  "description": "Atiende y vende 24/7 con un asistente automático"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "routes": {
+        "svc_ads": "service_detail",
+        "svc_seo": "service_detail",
+        "svc_social": "service_detail",
+        "svc_web": "service_detail",
+        "svc_bot": "service_detail"
+      }
+    },
+    "service_detail": {
+      "messages": [
+        {
+          "type": "text",
+          "body": "¡Excelente elección! Cada plan se arma a la medida de tu negocio. Los paquetes empiezan desde S/ 790 al mes e incluyen reporte mensual de resultados."
+        },
+        {
+          "type": "buttons",
+          "body": "¿Qué te gustaría hacer ahora?",
+          "buttons": [
+            {
+              "id": "book_call",
+              "title": "Agendar reunión"
+            },
+            {
+              "id": "brochure",
+              "title": "Recibir brochure"
+            },
+            {
+              "id": "welcome",
+              "title": "Volver al menú"
+            }
+          ]
+        }
+      ]
+    },
+    "brochure": {
+      "messages": [
+        {
+          "type": "document",
+          "asset": "brochure.pdf",
+          "body": "Aquí tienes nuestro brochure con servicios, casos de éxito y planes."
+        },
+        {
+          "type": "buttons",
+          "body": "¿Te gustaría conversar con un especialista sobre tu proyecto?",
+          "buttons": [
+            {
+              "id": "book_call",
+              "title": "Agendar reunión"
+            },
+            {
+              "id": "human",
+              "title": "Hablar con asesor"
+            }
+          ]
+        }
+      ]
+    },
+    "book_call": {
+      "messages": [
+        {
+          "type": "list",
+          "header": "Diagnóstico gratuito",
+          "body": "Es una videollamada de 30 minutos: revisamos tu negocio y te proponemos un plan de acción. ¿Qué día te acomoda?",
+          "footer": "Sin compromiso",
+          "list_button": "Elegir día",
+          "sections": [
+            {
+              "title": "Esta semana",
+              "rows": [
+                {
+                  "id": "day_mon",
+                  "title": "Lunes",
+                  "description": "De 9:00 am a 6:00 pm"
+                },
+                {
+                  "id": "day_tue",
+                  "title": "Martes",
+                  "description": "De 9:00 am a 6:00 pm"
+                },
+                {
+                  "id": "day_wed",
+                  "title": "Miércoles",
+                  "description": "De 9:00 am a 6:00 pm"
+                },
+                {
+                  "id": "day_thu",
+                  "title": "Jueves",
+                  "description": "De 9:00 am a 6:00 pm"
+                },
+                {
+                  "id": "day_fri",
+                  "title": "Viernes",
+                  "description": "De 9:00 am a 6:00 pm"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "routes": {
+        "day_mon": "book_time",
+        "day_tue": "book_time",
+        "day_wed": "book_time",
+        "day_thu": "book_time",
+        "day_fri": "book_time"
+      }
+    },
+    "human": {
+      "messages": [
+        {
+          "type": "text",
+          "body": "Perfecto, te comunico con un asesor. En unos minutos te escribe una persona de nuestro equipo. Horario de atención: lunes a viernes de 9:00 a 18:00."
+        }
+      ],
+      "handoff": true
+    },
+    "book_time": {
+      "capture": "booking_day",
+      "messages": [
+        {
+          "type": "buttons",
+          "body": "Perfecto, el *{booking_day}*. ¿A qué hora prefieres?",
+          "buttons": [
+            {
+              "id": "time_10",
+              "title": "10:00 am"
+            },
+            {
+              "id": "time_12",
+              "title": "12:00 pm"
+            },
+            {
+              "id": "time_16",
+              "title": "4:00 pm"
+            }
+          ]
+        }
+      ],
+      "routes": {
+        "time_10": "book_done",
+        "time_12": "book_done",
+        "time_16": "book_done"
+      }
+    },
+    "book_done": {
+      "capture": "booking_time",
+      "messages": [
+        {
+          "type": "text",
+          "body": "¡Listo! Tu diagnóstico gratuito quedó agendado para el *{booking_day}* a las *{booking_time}* ✅\n\nUn día antes te enviaremos por aquí el enlace de la videollamada."
+        },
+        {
+          "type": "buttons",
+          "body": "¿Te ayudo con algo más?",
+          "buttons": [
+            {
+              "id": "welcome",
+              "title": "Volver al menú"
+            },
+            {
+              "id": "human",
+              "title": "Hablar con asesor"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
