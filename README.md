@@ -253,7 +253,3 @@ en [`docs/arquitectura.md`](docs/arquitectura.md).
 ## Contribuir
 
 Lee [`CONTRIBUTING.md`](CONTRIBUTING.md). Issues y PR en español o inglés.
-
-## Licencia
-
-[MIT](LICENSE) © 2026 Brayan Huincho
